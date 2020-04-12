@@ -15,9 +15,9 @@ RSpec.describe 'Foods Request', type: :request do
   end
 
   it 'returns a collection of foods when there are foods' do
-    Food.create!(name: 'apples')
-    Food.create!(name: 'bananas')
-    Food.create!(name: 'chocolate')
+    Food.create(name: 'apples')
+    Food.create(name: 'bananas')
+    Food.create(name: 'chocolate')
 
     get '/foods'
 
